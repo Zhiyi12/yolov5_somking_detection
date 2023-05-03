@@ -1,0 +1,12 @@
+python train.py --data coco.yaml --epochs 300 --weights '' --cfg yolov5n.yaml  --batch-size 128
+                                                                 yolov5s                    64
+                                                                 yolov5m                    40
+                                                                 yolov5l                    24
+                                                                 yolov5x                    16
+
+python train.py --data coco.yaml --epochs 300 --weights '' --cfg yolov5n.yaml  --batch-size 128
+训练的数据集相关文件是coco.yaml
+迭代次数是：300
+权重：weight 如果不填就相当于是完全从头开始训练
+--cfg: 这个是表示具体用哪个模型参数： 我们这里用的就是 yolov5s.yaml
+python train.py --data smoking.yaml --epochs 10 --weights '' --cfg yolov5s.yaml  --batch-size 128
